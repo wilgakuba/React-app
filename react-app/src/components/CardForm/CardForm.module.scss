@@ -1,0 +1,17 @@
+@import '../../styles/settings.scss';
+
+.cardForm {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+span {
+    margin: 10px;
+}
+
+input {
+    border-radius: $radius;
+    padding: $base-size;
+    margin: 0 $base-size $base-size $base-size;
+}
