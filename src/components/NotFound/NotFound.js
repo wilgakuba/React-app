@@ -1,4 +1,3 @@
-
 import PageTitle from '../PageTitle/PageTitle';
 import styles from './NotFound.module.scss';
 

@@ -1,11 +1,9 @@
-import { createStore, combineReducers } from 'redux';
+import { legacy_createStore as createStore, combineReducers } from 'redux';
 import initialState from './initialState';
 import listsReducer from './listsRedux';
 import cardsReducer from './cardsRedux';
 import columnsReducer from './columnsRedux';
 import searchStringReducer from './searchStringRedux';
-
-
 
 const subreducers = {
   lists: listsReducer,
@@ -21,4 +19,6 @@ const store = createStore(
   initialState,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
+
+
 export default store;

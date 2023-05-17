@@ -7,7 +7,7 @@ import { toggleCardFavorite, removeCard } from '../../redux/cardsRedux';
 const Card = props => {
 
   const dispatch = useDispatch();
-
+  
   const handleClick = e => {
     e.preventDefault();
     dispatch(toggleCardFavorite(props.id));
